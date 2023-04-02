@@ -102,7 +102,6 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  top: 50px;
   height: 70px;
   z-index: 997;
   transition: all 0.5s;
@@ -1600,4 +1599,8 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+
+.text-primary {
+  color: #ffb03b !important;
 }

@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-{{dd(haha())}}
 <!-- ======= Menu Section ======= -->
     <section id="menu" class="menu">
       <div class="container">

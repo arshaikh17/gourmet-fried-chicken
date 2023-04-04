@@ -42,6 +42,9 @@
 
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    @stack('scripts')
+
 </head>
 
 <body>
@@ -64,8 +67,9 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link active" href="{{ route('index.index') }}">Menu</a></li>
-          <li><a class="nav-link" href="{{ route('index.about') }}">About</a></li>
+          <li><a class="nav-link active" href="{{ route('index.index') }}">Our Menu</a></li>
+          <li><a class="nav-link" href="{{ route('index.about') }}">Order</a></li>
+          <li><a class="nav-link" href="{{ route('index.about') }}">Join Us</a></li>
           <li><a class="nav-link" href="{{ route('index.contact') }}">Contact</a></li>
         </ul>
       </nav>

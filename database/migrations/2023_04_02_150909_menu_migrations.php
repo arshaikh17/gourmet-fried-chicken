@@ -11,6 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
+        Schema::dropIfExists('categories');
+        Schema::dropIfExists('items');
+        
         Schema::create('categories', function(Blueprint $table) {
             $table->id();
             $table->string('name')->nullable(false);
@@ -24,7 +27,7 @@ return new class extends Migration
             $table->string('name')->nullable(false);
             $table->string('tagline')->nullable();
             $table->string('thumbnail')->nullable();
-            $table->foreign('category_id')->nullable(false);
+            $table->bigInteger('category_id')->nullable(false);
             $table->timestamp('disabled_at')->nullable();
             $table->softDeletes();
             $table->timestamps();

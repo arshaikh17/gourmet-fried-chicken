@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu" style="padding: 22px 0;">
+    <section id="menu" class="menu" style="padding: 0;">
       <div>
 
         <div class="section-title" style="position: relative; margin-bottom: 20px;">
@@ -12,12 +12,12 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 150px;
+            height: 200px;
             position: relative;
             z-index: 0
           ">
           </div>
-          <div style="height: 150px; z-index: 1;  background-color: rgba(0,0,0,0.5);
+          <div style="height: 200px; z-index: 1;  background-color: rgba(0,0,0,0.5);
             position: absolute;
             top: 0;
             left: 0;
@@ -26,7 +26,7 @@
             ">
             
           </div>
-            <h2 style="color: white; position: absolute; right: 39%; top: 30px; z-index: 2">
+            <h2 style="color: white; position: absolute; right: 39%; top: 45px; z-index: 2">
               Check our tasty <span>Menu</span>
               <span style="display: block; font-size: 18px;">All our chicken is Halal</span>
             </h2>

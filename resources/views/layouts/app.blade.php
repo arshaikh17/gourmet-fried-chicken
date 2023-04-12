@@ -58,7 +58,7 @@
   </section>-->
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparet">
+  <header id="header" class="d-flex align-items-center header-transparet">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <div class="logo me-auto">
@@ -74,9 +74,23 @@
         </ul>
       </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
 
-    <main id="main" class="py-5">
+  <div id="mobileMenu" style="height: 35px; background: #ffb03b;">
+        <ul style="display: flex;
+justify-content: space-around;
+list-style: none;
+padding-top: 5px;">
+          <li><a class="nav-link active" href="{{ route('index.index') }}">Our Menu</a></li>
+          <li><a class="nav-link" href="{{ route('index.about') }}">Order</a></li>
+          <li><a class="nav-link" href="{{ route('index.about') }}">Join Us</a></li>
+          <li><a class="nav-link" href="{{ route('index.contact') }}">Contact</a></li>
+        </ul>
+      </div>
+
+  <!-- End Header -->
+
+    <main id="main" class="" style="">
         @yield('content')
     </main><!-- End #main -->
 
